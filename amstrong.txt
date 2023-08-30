@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int num,sum=0,rem,a;
+    printf("enter the number\t");
+    scanf("%d",&num);
+    a=num;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum+rem*rem*rem;
+        a=a/10;
+        
+    }
+    if(sum==num)
+    {
+        printf("%d is an amstrong number",num);
+    }
+    else {
+        printf("%d is not an amstrong number",num);
+    }
+
+    return 0;
+}

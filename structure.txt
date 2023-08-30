@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+struct employee
+{
+    int id;
+    char name[50];
+    int salary;
+}e1,e2;
+int main() {
+    // Write C code here
+    e1.id=101;
+    strcpy(e1.name,"gopika");
+    e1.salary=10000;
+    printf("employee.id:%d\n",e1.id);
+    printf("employee.name:%s\n",e1.name);
+    printf("employee.salary:%d\n",e1.salary);
+    
+    e2.id=102;
+    strcpy(e2.name,"hamna");
+    e2.salary=30000;
+    printf("employee.id:%d\n",e2.id);
+    printf("emloyee.name:%s\n",e2.name);
+    printf("employee.salary:%d\n",e2.salary);
+    
+
+    return 0;
+}
