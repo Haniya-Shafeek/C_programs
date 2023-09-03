@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int binarysearch(int ar[],int low,int high,int key)
+{
+    if(high<low)
+      return -1;
+    int mid=(low+high)/2;
+    if(key==ar[mid])
+        return mid;
+    if(key>ar[mid])
+      return binarysearch(ar,(mid+1),high,key);
+      return binarysearch(ar,low,(mid-1),key);
+}
+int main() {
+    // Write C code here
+    int ar[]={4,5,6,8,10};
+    int n,key;
+    
+    n=sizeof(ar)/sizeof(ar[0]);
+    key=5;
+   printf("index : %d",binarysearch(ar,0,n-1,key));
+    
+    return 0;
+}
